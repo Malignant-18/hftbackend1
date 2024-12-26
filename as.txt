@@ -1,0 +1,15 @@
+{
+    "message": "Lottery NFT successfully generated and uploaded to Pinata",
+    "imageLink": "https://gateway.pinata.cloud/ipfs/QmbZYdfN1zex94Pdttt3BQekk5CGUQ6uMrYQuWCQPRQwq3",
+    "metadataLink": "https://gateway.pinata.cloud/ipfs/QmZGAoeCmU4Lm1N1jfKfZ3Uwqf2NPqkiMtMDYg8fnf9CWc",
+    "imageHash": "QmbZYdfN1zex94Pdttt3BQekk5CGUQ6uMrYQuWCQPRQwq3",
+    "metadataHash": "QmZGAoeCmU4Lm1N1jfKfZ3Uwqf2NPqkiMtMDYg8fnf9CWc"
+}
+
+{
+    "message": "Lottery NFT successfully generated and uploaded to Pinata",
+    "imageLink": "https://gateway.pinata.cloud/ipfs/QmeYswfac5BxuD9pP6vuL7Y5NsvS9QAPjwuQQajkFKRbv2",
+    "metadataLink": "https://gateway.pinata.cloud/ipfs/QmWi5BdoCdKTRNzaVP8GdyyZv7ekfFDut9bzgyYpXVi4fB",
+    "imageHash": "QmeYswfac5BxuD9pP6vuL7Y5NsvS9QAPjwuQQajkFKRbv2",
+    "metadataHash": "QmWi5BdoCdKTRNzaVP8GdyyZv7ekfFDut9bzgyYpXVi4fB"
+}

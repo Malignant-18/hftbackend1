@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test POST Request</title>
+</head>
+<body>
+    <h1>Test Lottery NFT API</h1>
+    <form id="nftForm">
+        <label>
+            Lottery Code:
+            <input type="text" id="lotteryCode" required>
+        </label>
+        <br>
+        <label>
+            Lottery ID:
+            <input type="text" id="lotteryId" required>
+        </label>
+        <br>
+        <label>
+            Buyer Address:
+            <input type="text" id="buyerAddress" required>
+        </label>
+        <br><br>
+        <button type="submit">Send Request</button>
+    </form>
+    <pre id="response"></pre>
+
+    <script>
+        document.getElementById("nftForm").addEventListener("submit", async (event) => {
+            event.preventDefault();
+
+            const lotteryCode = document.getElementById("lotteryCode").value;
+            const lotteryId = document.getElementById("lotteryId").value;
+            const buyerAddress = document.getElementById("buyerAddress").value;
+
+            const responseElement = document.getElementById("response");
+            responseElement.textContent = "Sending request...";
+
+            try {
+                const response = await fetch("http://127.0.0.1:3000//create-lottery-nft", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ lotteryCode, lotteryId, buyerAddress })
+                });
+                const data = await response.json();
+                responseElement.textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                responseElement.textContent = `Error: ${error.message}`;
+            }
+        });
+    </script>
+</body>
+</html>

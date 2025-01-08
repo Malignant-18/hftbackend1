@@ -82,7 +82,7 @@ app.post("/create-lottery-nft", async (req, res) => {
         const metadata = {
             name: `Lottery Ticket ${lotteryCode}-${lotteryId}`,
             description: `NFT Lottery ticket for code ${lotteryCode}`,
-            image: imageLink,
+            image: imageLink, //importent staff 
             attributes: [
                 {
                     trait_type: "Lottery Type",

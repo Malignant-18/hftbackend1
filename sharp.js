@@ -9,6 +9,8 @@ async function generateImage(lotteryCode, lotteryId) {
 
   try {
     const basePath = "./lotterytemplates/palakkad.png";  // Base template image
+
+    //doesn't req for now
     const generatedPath = `./lotteryimages/${lotteryCode}_${lotteryId}.png` ; // Generated image path
 
     // Get dimensions of the base image
